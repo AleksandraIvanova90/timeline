@@ -1,0 +1,121 @@
+body{
+  position: relative;
+  background-color: #fdfdfd;
+  background-image:
+  linear-gradient(90deg, transparent 98px, transparent 100px),
+  linear-gradient(#e8e7e7 1px, transparent 0px),
+  linear-gradient(90deg, #e8e7e7 1px, transparent 0px);
+  background-size:100% 100%, 15px 15px, 15px 15px;
+  background-position: 0 0, -1px -1px, -1px 1px;
+  font-family: Verdana, sans-serif;
+}
+
+.container {
+  width: 700px;
+  height: 850px;
+  max-width: 700px;
+  display: block;
+  color: rgb(109, 108, 108);
+
+}
+
+.line {
+  width: 500px;
+  margin: 40px;
+  height: 750px;
+  background-color: #fdfdfd;
+  overflow-y: scroll;
+}
+
+.input-field {
+  width: 500px;
+  height: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.text {
+  width: 400px;
+  height: 25px;
+}
+
+.submit {
+  display: none
+}
+
+.text-entry{
+  width: 400px;
+  background-color: antiquewhite;
+  height: 150px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 20px;
+  
+}
+
+.text-entry__date {
+  margin-top: 12px;
+  margin-left: 270px;
+  
+  /* border: 2px black solid; */
+  width: 150px;
+  font-size: 12px;
+}
+
+.text-entry__content{
+  font-size: 14px;
+  margin-left: 15px;
+  margin-right: 15px;
+ 
+}
+
+.text-entry__coordinates {
+  font-size: 12px;
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
+
+.notification {
+  position: absolute;
+  font-size: 16px;
+  border: 2px rgb(248, 173, 190) solid;
+  border-radius: 30px;
+  background-color: rgb(248, 217, 217);
+  width: 400px;
+  height: auto;
+  display: block;
+  padding: 20px;
+  margin-left: 60px;
+  margin-top: 100px;
+  cursor: pointer;
+}
+
+.notification__input {
+  border: 2px rgb(248, 173, 190) solid;
+  background-color: whitesmoke;
+  height: 30px;
+  padding: 5px;
+  width: 250px;
+}
+
+.notification__buttons{
+  display: flex;
+  justify-content: end;
+  margin-top: 20px;
+  
+}
+
+.notification__buttons__cancel, .notification__buttons__ok {
+  border: 2px rgb(214, 213, 213) solid;
+  border-radius: 30px;
+  padding: 10px;
+  background-color: #e8e7e7;
+  margin-right: 20px;
+  width: 70px;
+  text-align: center;
+}
+
+.plug {
+  display: none;
+}
