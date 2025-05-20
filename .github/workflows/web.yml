@@ -60,8 +60,10 @@ jobs:
           cache: 'yarn'
       - run: yarn
       - run: yarn build
-      - name: Setup Pages
+      - name: Configure Pages
         uses: actions/configure-pages@v4
+        with:
+          enablement: true
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
